@@ -22,7 +22,7 @@ const Home = () => {
         </div>
         <div className="form-group mt-2">
           <span>Username(only letters, number, and underscores)</span>
-          <input type="username" className="form-control" id="exampleInputEmail1" />
+          <input type="username" className="form-control" />
         </div>
         <div className="form-group mt-2">
           <span>Password(min 6 char)</span>
