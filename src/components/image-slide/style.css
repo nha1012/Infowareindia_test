@@ -1,0 +1,38 @@
+
+.slider{
+    position: relative;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+}
+.back-slide{
+    position: absolute;
+    top: 45%;
+    left: 32px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+}
+.next-slide{
+    position: absolute;
+    top: 45%;
+    right: 32px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+}
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
