@@ -1,6 +1,8 @@
 import './App.css';
 import Header from './components/header';
 import Products from './components/products';
+import ProductDetail from './components/product-detail';
+
 import Login from './components/login';
 import SignUp from './components/signup';
 import ImageSlide from './components/image-slide';
@@ -14,9 +16,11 @@ function App() {
         <div className="App">
           <Header />
           <Route path="/" exact component={ImageSlide} />
-          <Route path="/products"  component={Products}/>
+          <Route path="/products" exact component={Products}/>
           <Route path="/login" component={Login} />
           <Route path="/sign-up" component={SignUp} />
+          <Route path="/products/:id" component={ProductDetail} />
+
           <Footer/>
         </div>
       </Router>
